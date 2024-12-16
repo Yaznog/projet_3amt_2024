@@ -1,0 +1,133 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Intel and sold by Intel or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "11/25/2024 12:07:46"
+                                                                                
+// Verilog Test Bench template for design : project_3amt_2025
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ps/ 1 ps
+module project_3amt_2025_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg [11:0] CCD_DATA;
+reg CCD_FVAL;
+reg CCD_LVAL;
+reg CCD_PIXCLK;
+reg CLOCK_50;
+reg Ext_Clock;
+reg treg_I2C_SCLK;
+reg treg_I2C_SDAT;
+reg [3:0] KEY;
+reg [9:0] SW;
+// wires                                               
+wire CCD_MCCLK;
+wire [6:0]  HEX0;
+wire [6:0]  HEX1;
+wire [6:0]  HEX2;
+wire [6:0]  HEX3;
+wire [6:0]  HEX4;
+wire [6:0]  HEX5;
+wire I2C_SCLK;
+wire I2C_SDAT;
+wire [7:0]  LEDG;
+wire RESETn;
+wire servo1;
+wire servo2;
+wire tempo_flag;
+wire TRIGGER;
+wire [7:0]  VGA_B;
+wire VGA_BLANK_N;
+wire VGA_BLANK_N_OBS;
+wire VGA_CLK;
+wire [7:0]  VGA_G;
+wire VGA_G7_OBS;
+wire VGA_HS;
+wire VGA_HS_OBS;
+wire [7:0]  VGA_R;
+wire VGA_SYNC_N;
+wire VGA_VS;
+wire VGA_VS_OBS;
+
+// assign statements (if any)                          
+assign I2C_SCLK = treg_I2C_SCLK;
+assign I2C_SDAT = treg_I2C_SDAT;
+project_3amt_2025 i1 (
+// port map - connection between master ports and signals/registers   
+	.CCD_DATA(CCD_DATA),
+	.CCD_FVAL(CCD_FVAL),
+	.CCD_LVAL(CCD_LVAL),
+	.CCD_MCCLK(CCD_MCCLK),
+	.CCD_PIXCLK(CCD_PIXCLK),
+	.CLOCK_50(CLOCK_50),
+	.Ext_Clock(Ext_Clock),
+	.HEX0(HEX0),
+	.HEX1(HEX1),
+	.HEX2(HEX2),
+	.HEX3(HEX3),
+	.HEX4(HEX4),
+	.HEX5(HEX5),
+	.I2C_SCLK(I2C_SCLK),
+	.I2C_SDAT(I2C_SDAT),
+	.KEY(KEY),
+	.LEDG(LEDG),
+	.RESETn(RESETn),
+	.servo1(servo1),
+	.servo2(servo2),
+	.SW(SW),
+	.tempo_flag(tempo_flag),
+	.TRIGGER(TRIGGER),
+	.VGA_B(VGA_B),
+	.VGA_BLANK_N(VGA_BLANK_N),
+	.VGA_BLANK_N_OBS(VGA_BLANK_N_OBS),
+	.VGA_CLK(VGA_CLK),
+	.VGA_G(VGA_G),
+	.VGA_G7_OBS(VGA_G7_OBS),
+	.VGA_HS(VGA_HS),
+	.VGA_HS_OBS(VGA_HS_OBS),
+	.VGA_R(VGA_R),
+	.VGA_SYNC_N(VGA_SYNC_N),
+	.VGA_VS(VGA_VS),
+	.VGA_VS_OBS(VGA_VS_OBS)
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+                                                       
+// --> end                                             
+$display("Running testbench");                       
+end                                                    
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin                          
+                                                       
+@eachvec;                                              
+// --> end                                             
+end                                                    
+endmodule
+

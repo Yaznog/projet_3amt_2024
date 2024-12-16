@@ -1,0 +1,10 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+/tp/xph3app/xph3app608/projet_3amt_2025/Quartus\ Project/modules {/tp/xph3app/xph3app608/projet_3amt_2025/Quartus Project/modules/counter.sv}
+vcom -93 -work work {/tp/xph3app/xph3app608/projet_3amt_2025/Quartus Project/project_3amt_2025.vhd}
+
