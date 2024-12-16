@@ -1,0 +1,90 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(symbol
+	(rect 544 96 992 336)
+	(text "rr" (rect 220 -1 231 15)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 224 25 235)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk_clk" (rect 0 0 38 13)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 61 42 74)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 192 72))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "reset_reset_n" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "reset_reset_n" (rect 4 141 81 154)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 192 152))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "uart_0_external_connection_rxd" (rect 0 0 180 13)(font "Arial" (font_size 8)))
+		(text "uart_0_external_connection_rxd" (rect 4 181 184 194)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 192 192))
+	)
+	(port
+		(pt 0 112)
+		(output)
+		(text "pio_external_connection_export[7..0]" (rect 0 0 206 13)(font "Arial" (font_size 8)))
+		(text "pio_external_connection_export[7..0]" (rect 4 101 210 114)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 192 112)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(output)
+		(text "uart_0_external_connection_txd" (rect 0 0 179 13)(font "Arial" (font_size 8)))
+		(text "uart_0_external_connection_txd" (rect 4 197 183 210)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 192 208))
+	)
+	(drawing
+		(text "clk" (rect 177 43 195 57)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 197 67 211 78)(font "Arial" (color 0 0 0)))
+		(text "pio_external_connection" (rect 53 83 207 97)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 197 107 227 118)(font "Arial" (color 0 0 0)))
+		(text "reset" (rect 163 123 196 137)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 197 147 234 158)(font "Arial" (color 0 0 0)))
+		(text "uart_0_external_connection" (rect 32 163 207 177)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "rxd" (rect 197 187 212 198)(font "Arial" (color 0 0 0)))
+		(text "txd" (rect 197 203 212 214)(font "Arial" (color 0 0 0)))
+		(text " rr " (rect 437 224 451 235)(font "Arial" ))
+		(line (pt 192 32)(pt 256 32))
+		(line (pt 256 32)(pt 256 224))
+		(line (pt 192 224)(pt 256 224))
+		(line (pt 192 32)(pt 192 224))
+		(line (pt 193 52)(pt 193 76))
+		(line (pt 194 52)(pt 194 76))
+		(line (pt 193 92)(pt 193 116))
+		(line (pt 194 92)(pt 194 116))
+		(line (pt 193 132)(pt 193 156))
+		(line (pt 194 132)(pt 194 156))
+		(line (pt 193 172)(pt 193 212))
+		(line (pt 194 172)(pt 194 212))
+		(line (pt 0 0)(pt 448 0))
+		(line (pt 448 0)(pt 448 240))
+		(line (pt 0 240)(pt 448 240))
+		(line (pt 0 0)(pt 0 240))
+	)
+)

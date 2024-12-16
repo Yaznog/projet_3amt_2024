@@ -1,0 +1,48 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity CLOCK_DIVIDER is
+    Port ( CLK_50M: 	IN std_logic;
+           reset: 	IN std_logic;
+			  CLK_1M: 	OUT std_logic;
+			  CLK_1K: 	OUT std_logic;
+			  CLK_10: 	OUT std_logic
+     );
+end CLOCK_DIVIDER;
+
+
+architecture Behavioral of CLOCK_DIVIDER is
+signal counter: 	integer range 0 to 5000000 / 23;
+signal CLK_1M_s: 	std_logic := 0;
+signal CLK_1K_s: 	std_logic := 0;
+signal CLK_10_s: 	std_logic := 0;
+
+begin
+
+process(CLK_50M)
+begin
+
+	if(rising_edge(clk)) then
+		if(reset='1') then
+			counter <= x"0";
+		else
+			counter <= counter + x"1";
+			if ((counter mod 50) = 0) then
+				CLK_1M_s <= not CLK_1M_s;
+			if ((counter mod 50000) = 0) then
+				CLK_1K_s <= not CLK_1K_s;
+			if (counter = 5000000) then
+				CLK_10_s <= not CLK_10_s;
+				counter <= 0;
+			end if;
+		end if;
+	end if;
+	
+end process;
+
+CLK_1M <= CLK_1M_s;
+CLK_1K <= CLK_1K_s;
+CLK_10 <= CLK_10_s;
+
+end CLOCK_DIVIDER;

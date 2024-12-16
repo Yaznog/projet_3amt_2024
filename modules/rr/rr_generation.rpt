@@ -1,0 +1,90 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /tp-fmr/projets_mt3A/nios2/quart17/DE1_SOC_Nios/rr.qsys --block-symbol-file --output-directory=/tp-fmr/projets_mt3A/nios2/quart17/DE1_SOC_Nios/rr --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading DE1_SOC_Nios/rr.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 17.0]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 17.0]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 17.0]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding pio [altera_avalon_pio 17.0]
+Progress: Parameterizing module pio
+Progress: Adding uart_0 [altera_avalon_uart 17.0]
+Progress: Parameterizing module uart_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /tp-fmr/projets_mt3A/nios2/quart17/DE1_SOC_Nios/rr.qsys --synthesis=VHDL --output-directory=/tp-fmr/projets_mt3A/nios2/quart17/DE1_SOC_Nios/rr/synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading DE1_SOC_Nios/rr.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 17.0]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 17.0]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 17.0]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding pio [altera_avalon_pio 17.0]
+Progress: Parameterizing module pio
+Progress: Adding uart_0 [altera_avalon_uart 17.0]
+Progress: Parameterizing module uart_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: rr: Generating rr "rr" for QUARTUS_SYNTH
+Info: nios2_gen2_0: "rr" instantiated altera_nios2_gen2 "nios2_gen2_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'rr_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec /softl2/altera17_0/quartus/linux64/perl/bin/perl -I /softl2/altera17_0/quartus/linux64/perl/lib -I /softl2/altera17_0/quartus/sopc_builder/bin/europa -I /softl2/altera17_0/quartus/sopc_builder/bin/perl_lib -I /softl2/altera17_0/quartus/sopc_builder/bin -I /softl2/altera17_0/quartus/../ip/altera/sopc_builder_ip/common -I /softl2/altera17_0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /softl2/altera17_0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=rr_onchip_memory2_0 --dir=/tmp/alt9284_4588483149534653186.dir/0019_onchip_memory2_0_gen/ --quartus_dir=/softl2/altera17_0/quartus --verilog --config=/tmp/alt9284_4588483149534653186.dir/0019_onchip_memory2_0_gen//rr_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0: Done RTL generation for module 'rr_onchip_memory2_0'
+Info: onchip_memory2_0: "rr" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: pio: Starting RTL generation for module 'rr_pio'
+Info: pio:   Generation command is [exec /softl2/altera17_0/quartus/linux64/perl/bin/perl -I /softl2/altera17_0/quartus/linux64/perl/lib -I /softl2/altera17_0/quartus/sopc_builder/bin/europa -I /softl2/altera17_0/quartus/sopc_builder/bin/perl_lib -I /softl2/altera17_0/quartus/sopc_builder/bin -I /softl2/altera17_0/quartus/../ip/altera/sopc_builder_ip/common -I /softl2/altera17_0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /softl2/altera17_0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=rr_pio --dir=/tmp/alt9284_4588483149534653186.dir/0020_pio_gen/ --quartus_dir=/softl2/altera17_0/quartus --verilog --config=/tmp/alt9284_4588483149534653186.dir/0020_pio_gen//rr_pio_component_configuration.pl  --do_build_sim=0  ]
+Info: pio: Done RTL generation for module 'rr_pio'
+Info: pio: "rr" instantiated altera_avalon_pio "pio"
+Info: uart_0: Starting RTL generation for module 'rr_uart_0'
+Info: uart_0:   Generation command is [exec /softl2/altera17_0/quartus/linux64/perl/bin/perl -I /softl2/altera17_0/quartus/linux64/perl/lib -I /softl2/altera17_0/quartus/sopc_builder/bin/europa -I /softl2/altera17_0/quartus/sopc_builder/bin/perl_lib -I /softl2/altera17_0/quartus/sopc_builder/bin -I /softl2/altera17_0/quartus/../ip/altera/sopc_builder_ip/common -I /softl2/altera17_0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart -- /softl2/altera17_0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart/generate_rtl.pl --name=rr_uart_0 --dir=/tmp/alt9284_4588483149534653186.dir/0021_uart_0_gen/ --quartus_dir=/softl2/altera17_0/quartus --verilog --config=/tmp/alt9284_4588483149534653186.dir/0021_uart_0_gen//rr_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: uart_0: Done RTL generation for module 'rr_uart_0'
+Info: uart_0: "rr" instantiated altera_avalon_uart "uart_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "rr" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "rr" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "rr" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'rr_nios2_gen2_0_cpu'
+Info: cpu:   Generation command is [exec /softl2/altera17_0/quartus/linux64//eperlcmd -I /softl2/altera17_0/quartus/linux64//perl/lib -I /softl2/altera17_0/quartus/sopc_builder/bin/europa -I /softl2/altera17_0/quartus/sopc_builder/bin/perl_lib -I /softl2/altera17_0/quartus/sopc_builder/bin -I /softl2/altera17_0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I /softl2/altera17_0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I /softl2/altera17_0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I /softl2/altera17_0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- /softl2/altera17_0/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=rr_nios2_gen2_0_cpu --dir=/tmp/alt9284_4588483149534653186.dir/0024_cpu_gen/ --quartus_bindir=/softl2/altera17_0/quartus/linux64/ --verilog --config=/tmp/alt9284_4588483149534653186.dir/0024_cpu_gen//rr_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2022.10.19 15:16:15 (*) Starting Nios II generation
+Info: cpu: # 2022.10.19 15:16:15 (*)   Checking for plaintext license.
+Info: cpu: # 2022.10.19 15:16:16 (*)   Plaintext license not found.
+Info: cpu: # 2022.10.19 15:16:16 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2022.10.19 15:16:16 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2022.10.19 15:16:16 (*)   Creating all objects for CPU
+Info: cpu: # 2022.10.19 15:16:16 (*)   Generating RTL from CPU objects
+Info: cpu: # 2022.10.19 15:16:16 (*)   Creating plain-text RTL
+Info: cpu: # 2022.10.19 15:16:17 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'rr_nios2_gen2_0_cpu'
+Info: cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
+Info: nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
+Info: nios2_gen2_0_debug_mem_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "nios2_gen2_0_debug_mem_slave_translator"
+Info: nios2_gen2_0_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_gen2_0_data_master_agent"
+Info: nios2_gen2_0_debug_mem_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "nios2_gen2_0_debug_mem_slave_agent"
+Info: nios2_gen2_0_debug_mem_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "nios2_gen2_0_debug_mem_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file /tp-fmr/projets_mt3A/nios2/quart17/DE1_SOC_Nios/rr/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: rr: Done "rr" with 22 modules, 36 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
